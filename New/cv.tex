@@ -17,15 +17,9 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
-\defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
-\setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
-]
-{Fontin.otf}
+\fontspec{Latin Modern Roman}
 %%%
 
 %CV Sections inspired by:
@@ -48,7 +42,6 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
 %WATERMARK TEST [**not part of a CV**]---------------
 %\font\wm=''Baskerville:color=787878'' at 8pt
 %\font\wmweb=''Baskerville:color=FF1493'' at 8pt
@@ -65,7 +58,7 @@ ItalicFont = Fontin-Italic.otf
 \pagestyle{empty} % non-numbered pages
 
 \font\fb=''[cmr10]'' %for use with \LaTeX command
-
+\fontsize{30pt}{36pt}\selectfont
 %--------------------TITLE-------------
 \par{\centering
 		{Rob \textsc{Willison}
@@ -74,9 +67,8 @@ ItalicFont = Fontin-Italic.otf
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
 \section{Personal Data}
-
+\fontsize{12pt}{12pt}\selectfont
 \begin{tabular}{rl}
-    \textsc{Place and Date of Birth:} & \\
     \textsc{Address:}   & Bath, Somerset, BA2 3QH\\
     \textsc{Phone:}     & 079853 45092\\
     \textsc{email:}     & \href{mailto:rob@willison.co.uk}{rob@willison.co.uk}
@@ -84,57 +76,58 @@ ItalicFont = Fontin-Italic.otf
 
 %Section: Education
 \section{Education}
-\begin{tabular}{rl}
- \textsc{Sept} 2013 - Current & Bsc Computer Science, \textbf{Bath University}, Bath, UK\\
-& Final Year Modules -\\
-& \hspace{0.25cm} Advanced Compilers, Parallel Computing, Networking, \\ & \hspace{0.25cm} Advanced Computer Graphics, Computer Vison, Cryptography\\
-& \\
-& Second Year Modules -\\
-& \hspace{0.25cm} Advanced Programming Principles, Software Systems Development, \\ & \hspace{0.25cm} Designing Interactive Systems, Foundations of Computation \\ & \hspace{0.25cm} Fundamentals of Visual Computing, Fundamentals of Pattern Analysis\\
-& Second Year Average - 67\%\\
-& \\
-& First Year Modules -\\
-& \hspace{0.25cm} Systems Requirements and Design, Computer Systems Architecture, \\ & \hspace{0.25cm} Discrete Mathematics for Computation, Principles of Programming\\ & \hspace{0.25cm} Analytical Mathematics for Applications\\
-& First Year Average - 80\%\\
-& \\
-\textsc{Sept} 2011 - \textsc{July} 2013 & A/As - Levels \\& \normalsize\textbf{Didcot Sixth Form College}, Didcot, UK\\
-& A Level Computing - A*\\
-& A Level Maths - A\\
-& A Level Physics - B\\
-& AS Level Engineering - B\\&\\
-\textsc{Sept} 2010 - \textsc{July} 2011& GCSE \textbf{St Birinus School}, Didcot, UK\\
-&9 GCSE passes at grade C or better, including Mathematics \& English \\
-\end{tabular}
+ \textsc{Sept} 2013 to Current - Bsc Computer Science, \textbf{Bath University}, Bath, UK\\
+\hspace*{0.5cm}Final Year Modules\\
+\hspace*{1cm} Advanced Compilers, Parallel Computing, Networking, \\ \hspace*{1cm} Advanced Computer Graphics, Computer Vision, Cryptography\\
+\\
+\hspace*{0.5cm}Second Year Modules\\
+\hspace*{1cm} Advanced Programming Principles, Software Systems Development, \\ \hspace*{1cm} Designing Interactive Systems, Foundations of Computation \\ \hspace*{1cm} Fundamentals of Visual Computing, Fundamentals of Pattern Analysis\\
+\hspace*{0.5cm}Second Year Average - 67\%\\
+\\
+\hspace*{0.5cm}First Year Modules\\
+\hspace*{1cm} Systems Requirements and Design, Computer Systems Architecture, \\ \hspace*{1cm} Discrete Mathematics for Computation, Principles of Programming\\ \hspace*{1cm} Analytical Mathematics for Applications\\
+\hspace*{0.5cm}First Year Average - 80\%\\
+\\
+\textsc{Sept} 2011 to \textsc{July} 2013 - A/As Levels \textbf{Didcot Sixth Form College}, Didcot, UK\\
+\hspace*{0.5cm}A Level Computing - A*\\
+\hspace*{0.5cm}A Level Maths - A\\
+\hspace*{0.5cm}A Level Physics - B\\
+\hspace*{0.5cm}AS Level Engineering - B\\
+\\
+\textsc{Sept} 2009 - \textsc{July} 2011 GCSE \textbf{St Birinus School}, Didcot, UK\\
+\hspace*{0.5cm}9 GCSE passes at grade C or better, including Mathematics \& English \\
 
 %Section: Work Experience at the top
 \section{Experience}
+\fontsize{10pt}{10pt}\selectfont
 \begin{tabular}{r|p{11cm}}
-\textsc{Sept} 2016 - \textsc{Current} & Final Year Project \\&\emph{CiteAb Limited, Bath, UK}\\&\footnotesize{Final year project at Bath University, working with CiteAb to create a machine learning system capable of recognising institution names
-in research papers in order to improve there antibody search engine.}\\\multicolumn{2}{c}{} \\
+\textsc{Sept} 2016 - \textsc{Current} & Final Year Project \\&\emph{CiteAb Limited, Bath, UK}\\&\normalsize{Final year project with aim to develop a machine learning application capable of recognising institution names
+in research papers with greater accuracy than CiteAb's current system. The project is written in Python using a MySql database.}\\\multicolumn{2}{c}{} \\
 
-\textsc{July} 2015 - \textsc{July} 2016 & 3\textsuperscript{rd} Year Placement Student \\&\emph{Mayden Limited, Bath, UK}\\&\footnotesize{Working as a PHP and Javascript developer adding features and providing 3\textsuperscript{rd} line support for the uk's leading patient management software for psychological therapies.}\\\multicolumn{2}{c}{} \\
-\textsc{August} 2012 – \textsc{September} 2013 & Sales Assistent\\&\emph{Savages Ldt, Blewbury, Didcot, UK}\\&\footnotesize{Responsibilities included serving customers and assisting with enquiries. Preparing goods and maintaining stock levels in the shop.  }\\
+\textsc{July} 2015 - \textsc{July} 2016 & 3\textsuperscript{rd} Year Placement Student \\&\emph{Mayden Limited, Bath, UK}\\&\normalsize{Working as a PHP and Javascript developer adding features and providing 3\textsuperscript{rd} line support for the uk's leading patient management software for psychological therapies.}\\\multicolumn{2}{c}{} \\
+\textsc{Aug} 2012 – \textsc{Sept} 2013 & Sales Assistant\\&\emph{Savages Ldt, Blewbury, Didcot, UK}\\&\normalsize{Responsibilities included serving customers and assisting with enquiries. Preparing goods and maintaining stock levels in the shop.  }\\
 \end{tabular}
 
 %Section: Scholarships and additional info
 \section{Awards and Achivements}
+\fontsize{12pt}{12pt}\selectfont
 \begin{tabular}{rl}
- \textsc{Feburary} 2016 & Certified PHP Enginner, Zend Technologies\\
- \textsc{October} 2015 & Certified Scrum Master, Scrum Alliance\\
- \textsc{?} ? & First Aid (NEED TO FIND DATE)\\
- \textsc{October} 2014 & White Water Saftey and Rescue\\
+ \textsc{Feb} 2016 & Certified PHP Enginner, Zend Technologies\\
+ \textsc{Oct} 2015 & Certified Scrum Master, Scrum Alliance\\
+ \textsc{} 2015 & First Aid Qualification\\
+ \textsc{Oct} 2014 & White Water Saftey and Rescue\\
  \textsc{} 2013 & Netcraft AQA A-level Computing Award, Awarded to Top 50 students\\
 \end{tabular}
 
 \section{Extracurricular Activity}
-\begin{tabular}{rl}
- \textsc{Sept} 2016 & Chair, Bath University Canoe Club\\
- \textsc{July} 2014 - \textsc{July} 2016 & Webmaster, Bath University Canoe Club\\
+\begin{tabular}{r|p{11cm}}
+ \textsc{Sept} 2016 & Chair, \textbf{Bath University Canoe Club}\\& Responsible for the overall the running of a university canoe club including financial, administration and organising the annual kayaking fortnight to the French Alps. \\\
+ \textsc{July} 2014 - \textsc{July} 2016 & Webmaster, \textbf{Bath University Canoe Club}\\ & Responsible maintaining the canoe clubs website
 \end{tabular}
 
 
 %\newpage
-%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[normalsizeCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
 
 %\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
 
