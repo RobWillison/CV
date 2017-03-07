@@ -1,21 +1,21 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.12.4)  28 DEC 2016 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.2)  25 JAN 2017 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cv.tex
+**Dyson_covering_letter.tex
 
 ! Emergency stop.
-<*> cv.tex
-          
+<*> Dyson_covering_letter.tex
+                             
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 2 strings out of 495643
- 12 string characters out of 6187227
- 46061 words of memory out of 5000000
- 3302 multiletter control sequences out of 15000+600000
+ 3 strings out of 494942
+ 123 string characters out of 6180501
+ 45222 words of memory out of 5000000
+ 3393 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 0i,0n,0p,28b,6s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
